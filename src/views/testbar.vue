@@ -1,28 +1,40 @@
 <template>
-    <div class="testbar" v-show="isshow">
-        <span style="color: #fff;font-size: 18px;">系统前端静态界面展示导航: </span>
-        <!--测试条-->
-        <button type="button" class="close" style="opacity: 1;color: #fff;" @click="isshow = false"><span>×</span></button>
-        <br />
-        <router-link v-for="(name,url) of urls" :key="url" :to="url">{{url}}{{name}}</router-link>
-    </div>
+  <div class="testbar" v-show="isshow">
+    <span style="color: #fff;font-size: 18px;">系统前端静态界面展示导航:</span>
+    <!--测试条-->
+    <button type="button" class="close" style="opacity: 1;color: #fff;" @click="isshow = false">
+      <span>×</span>
+    </button>
+    <router-link
+      type="button"
+      class="btn btn-default"
+      active-class="btn-success"
+      v-for="(name,url) of urls"
+      :key="url"
+      :to="url"
+    >{{name}}</router-link>
+    <div
+      style="color: #fff;"
+    >聚合页顶部条向下的三角有展开效果；主菜单有切换效果；列表页右上角"示例"按钮有弹出操作效果；详情页数字块和"收起"有互动效果；编辑页有美化控件效果radio和checkbox</div>
+  </div>
 </template>
 <script>
 export default {
-    props:{
-        ishow:{
-            default:true
-        }
-    },
-    mounted:function(){
-        this.isshow = this.ishow;
-    },
+  name: "testbar",
+  props: {
+    ishow: {
+      default: true
+    }
+  },
+  mounted: function() {
+    this.isshow = this.ishow;
+  },
   data() {
     return {
       isshow: true,
 
       urls: {
-        login: "登陆页",
+        index: "登陆页",
         t1: "聚合页",
         t2: "列表页",
         t3: "列表+二级菜单",
@@ -35,6 +47,9 @@ export default {
 };
 </script>
 <style scoped>
+.btn {
+  margin-right: 2px;
+}
 .testbar {
   z-index: 1001;
   width: 100%;

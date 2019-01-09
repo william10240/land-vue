@@ -8,8 +8,8 @@ const router = new VueRouter({
   base: __dirname,
   routes: [
     {
-      path: '/index', 
-      component: (resolve) => require(['../views/index.vue'], resolve)
+      path: '/login', 
+      component: (resolve) => require(['../views/login.vue'], resolve)
     },
     {
       path: '/t1', 
@@ -38,7 +38,7 @@ const router = new VueRouter({
     {
       path: '*', 
       //redirect: '/login'
-      component: (resolve) => require(['../views/index.vue'], resolve)
+      component: (resolve) => require(['../views/login.vue'], resolve)
     }
   ]
 })

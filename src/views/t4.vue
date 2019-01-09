@@ -3,8 +3,8 @@
 </template>
 <script>
 export default {
-    
-}
+  name:"t4"
+};
 </script>
 <style scoped>
 
