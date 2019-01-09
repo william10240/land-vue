@@ -4,9 +4,7 @@
         <!--测试条-->
         <button type="button" class="close" style="opacity: 1;color: #fff;" @click="isshow = false"><span>×</span></button>
         <br />
-        <!-- <a type="button" class="btn" v-for="(name,url) of urls" :key="url">{{url}}{{name}}</a> -->
-        <br />
-        <router-link type="button" class="btn" v-for="(name,url) of urls" :key="url" :to="url">{{url}}{{name}}</router-link>
+        <router-link v-for="(name,url) of urls" :key="url" :to="url">{{url}}{{name}}</router-link>
     </div>
 </template>
 <script>
@@ -24,7 +22,7 @@ export default {
       isshow: true,
 
       urls: {
-        index: "登陆页",
+        login: "登陆页",
         t1: "聚合页",
         t2: "列表页",
         t3: "列表+二级菜单",

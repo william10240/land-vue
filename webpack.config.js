@@ -23,8 +23,11 @@ module.exports={
         ]
     },
     plugins:[
-        new VueLoaderPlugin(),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css"
+        }),
+        new VueLoaderPlugin()
     ]
 
 }
