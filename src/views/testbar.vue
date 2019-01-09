@@ -48,7 +48,7 @@ export default {
 </script>
 <style scoped>
 .btn {
-  margin-right: 2px;
+  margin: 0px 2px;
 }
 .testbar {
   z-index: 1001;
