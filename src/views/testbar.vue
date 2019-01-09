@@ -46,7 +46,7 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style>
 .btn {
   margin: 0px 2px;
 }

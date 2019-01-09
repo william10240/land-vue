@@ -1,7 +1,8 @@
 <template>
   <div>
     <vheader></vheader>
-    <vmenu></vmenu>this is t1
+    <vmenu></vmenu>
+    this is t1
     <vfooter></vfooter>
   </div>
 </template>
