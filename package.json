@@ -26,7 +26,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --port=8081 --history-api-fallback"
+    "dev": "webpack-dev-server --host=0.0.0.0 --port=27006 --history-api-fallback"
   },
   "author": "",
   "license": "ISC"
